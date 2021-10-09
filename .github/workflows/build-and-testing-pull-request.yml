@@ -29,8 +29,8 @@ jobs:
       - name: Gatsby build
         run: npm run build
 
-      - name: Lint check
-        run: npm run lint
+      # - name: Lint check
+      #   run: npm run lint
 
       # ビルド成功時
       - name: Slack Notification on Success
