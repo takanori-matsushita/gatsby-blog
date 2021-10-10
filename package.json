@@ -20,6 +20,15 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-eslint": "^4.0.0",
     "prettier": "2.3.2"
   },
   "keywords": [
@@ -29,7 +38,12 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint:eslint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "format:prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:eslint": "eslint --ext .js,.jsx --ignore-path .gitignore . --fix",
+    "format": "yarn format:eslint && yarn format:prettier",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
