@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 // Get paths of Gatsby's required rules, which as of writing is located at:
 // https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
 // gatsby/src/utils/eslint-rules
@@ -9,12 +9,13 @@ const gatsbyRequiredRules = path.join(
   'dist',
   'utils',
   'eslint-rules',
-);
+)
 
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+    description:
+      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@gatsbyjs',
     siteUrl: 'https://gatsbystarterdefaultsource.gatsbyjs.io/',
   },
@@ -60,4 +61,4 @@ module.exports = {
       },
     },
   ],
-};
+}
