@@ -26,7 +26,8 @@ const IndexPage = () => (
       <Link to="/page-2/">
         <Button variant="contained" color="success" endIcon={<SendIcon />}>
           Go to page 2
-        </Button><br />
+        </Button>
+        <br />
       </Link>
       <Link to="/using-typescript/">Go to &quot;Using TypeScript&quot;</Link>
     </p>
