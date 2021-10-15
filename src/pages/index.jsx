@@ -2,6 +2,9 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import { Button } from '@mui/material'
+import SendIcon from '@mui/icons-material/Send'
+
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
@@ -20,7 +23,12 @@ const IndexPage = () => (
       style={{ marginBottom: '1.45rem' }}
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
+      <Link to="/page-2/">
+        <Button variant="contained" color="success" endIcon={<SendIcon />}>
+          Go to page 2
+        </Button>
+        <br />
+      </Link>
       <Link to="/using-typescript/">Go to &quot;Using TypeScript&quot;</Link>
     </p>
   </Layout>
