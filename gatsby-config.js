@@ -13,11 +13,11 @@ const gatsbyRequiredRules = path.join(
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Spogineer',
     description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
-    siteUrl: 'https://gatsbystarterdefaultsource.gatsbyjs.io/',
+      '元実業団選手の技術備忘録。フロントエンドからバックエンド、インフラまで技術的な内容や、イベントに参加した感想などをアウトプットのために書き残しています。',
+    author: 'mattsun',
+    siteUrl: 'https://spogineer.com/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
