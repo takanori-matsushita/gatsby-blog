@@ -27,6 +27,7 @@
 
   "rules": {
     "no-use-before-define": "off",
+    "react/jsx-props-no-spreading": "off",
     "quotes": [2, "single", { "avoidEscape": true }],
     "react/jsx-filename-extension": [
       "error",
